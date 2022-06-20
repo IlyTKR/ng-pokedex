@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { PokemonModule } from '../pokemon/pokemon.module';
+import { PokemonModule } from './pokemon/pokemon.module';
 
 
 @NgModule({
@@ -13,8 +13,8 @@ import { PokemonModule } from '../pokemon/pokemon.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    PokemonModule
+    PokemonModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
